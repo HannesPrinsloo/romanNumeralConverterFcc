@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333; /* Changed background color to a dark mode color */
+}
+
+.container {
+    background-color: #444; /* Changed background color to a dark mode color */
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2); /* Increased shadow for a deeper look */
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 2rem;
+    color: #fff; /* Changed text color to white for better visibility */
+}
+
+.converter {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+input {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #555; /* Changed border color to a dark mode color */
+    border-radius: 4px;
+    background-color: #555; /* Changed background color to a dark mode color */
+    color: #fff; /* Changed text color to white for better visibility */
+}
+
+button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    background-color: #007bff; /* Changed background color to a dark mode color */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3; /* Changed hover background color to a dark mode color */
+}
+
+#output {
+    margin-top: 1rem;
+    padding: 1rem;
+    border: 1px solid #555; /* Changed border color to a dark mode color */
+    border-radius: 4px;
+    min-height: 50px;
+    background-color: #555; /* Changed background color to a dark mode color */
+    color: #fff; /* Changed text color to white for better visibility */
+} 
