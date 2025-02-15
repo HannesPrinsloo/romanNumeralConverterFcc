@@ -10,20 +10,20 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #333; /* Changed background color to a dark mode color */
+    background-color: #333;
 }
 
 .container {
-    background-color: #444; /* Changed background color to a dark mode color */
+    background-color: #444;
     padding: 2rem;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.2); /* Increased shadow for a deeper look */
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
     text-align: center;
 }
 
 h1 {
     margin-bottom: 2rem;
-    color: #fff; /* Changed text color to white for better visibility */
+    color: #fff;
 }
 
 .converter {
@@ -35,16 +35,16 @@ h1 {
 input {
     padding: 0.5rem;
     font-size: 1rem;
-    border: 1px solid #555; /* Changed border color to a dark mode color */
+    border: 1px solid #555;
     border-radius: 4px;
-    background-color: #555; /* Changed background color to a dark mode color */
-    color: #fff; /* Changed text color to white for better visibility */
+    background-color: #555;
+    color: #fff;
 }
 
 button {
     padding: 0.5rem 1rem;
     font-size: 1rem;
-    background-color: #007bff; /* Changed background color to a dark mode color */
+    background-color: #007bff;
     color: white;
     border: none;
     border-radius: 4px;
@@ -53,15 +53,15 @@ button {
 }
 
 button:hover {
-    background-color: #0056b3; /* Changed hover background color to a dark mode color */
+    background-color: #0056b3;
 }
 
 #output {
     margin-top: 1rem;
     padding: 1rem;
-    border: 1px solid #555; /* Changed border color to a dark mode color */
+    border: 1px solid #555;
     border-radius: 4px;
     min-height: 50px;
-    background-color: #555; /* Changed background color to a dark mode color */
-    color: #fff; /* Changed text color to white for better visibility */
+    background-color: #555;
+    color: #fff;
 } 
