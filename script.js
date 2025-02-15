@@ -3,11 +3,17 @@ const btn = document.getElementById("convert-btn");
 const output = document.getElementById("output");
 const romNum = [
     { symbol: 'M', value: 1000 },
+    { symbol: 'CM', value: 900 },
     { symbol: 'D', value: 500 },
+    { symbol: 'CD', value: 400 },
     { symbol: 'C', value: 100 },
+    { symbol: 'XC', value: 90 },
     { symbol: 'L', value: 50 },
+    { symbol: 'XL', value: 40 },
     { symbol: 'X', value: 10 },
+    { symbol: 'IX', value: 9 },
     { symbol: 'V', value: 5 },
+    { symbol: 'IV', value: 4 },
     { symbol: 'I', value: 1 }
 ];
 
@@ -42,48 +48,10 @@ const convert = () => {
     let num = Number(input.value);
     let result = '';
 
-    while (num !== 0) {
-
-        if (num >= 1000) {
-            result += 'M';
-            num -= 1000;
-        } else if (num >= 900) {
-            result += 'CM';
-            num -= 900;
-        } else if (num >= 500) {
-            result += 'D';
-            num -= 500;
-        } else if (num >= 400) {
-            result += 'CD';
-            num -= 400
-        } else if (num >= 100) {
-            result += 'C';
-            num -= 100;
-        } else if (num >= 90) {
-            result += 'XC';
-            num -= 90;
-        } else if (num >= 50) {
-            result += 'L';
-            num -= 50;
-        } else if (num >= 40) {
-            result += 'XL';
-            num -= 40;
-        } else if (num >= 10) {
-            result += 'X';
-            num -= 10;
-        } else if (num >= 9) {
-            result += 'IX';
-            num -= 9;
-        } else if (num >= 5) {
-            result += 'V';
-            num -= 5;
-        } else if (num >= 4) {
-            result += 'IX';
-            num -= 4;
-        } else {
-            result += 'I';
-            num -= 1;
-        }
+    while (num > 0) {
+        const numeral = romNum.find(rom => rom.value <= num);
+        result += numeral.symbol;
+        num -= numeral.value;
     }
     
     output.textContent = result;
